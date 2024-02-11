@@ -1,38 +1,154 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+.p {
+  font-size: xx-large;
+  margin-top: 20px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cell , .cell2 {
+  margin: 5px;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  color: rgb(15, 15, 106);
+  font-weight: bolder;
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cell2{
+  height: 75px;
+  width: 75px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cell:hover {
+  background-color: rgb(228, 227, 227);
+}
+.pastGames{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.board , .history{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+.mainDiv{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+}
+.nameTitle{
+  margin: 0px 20px;
+  font-size: 30px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px;
+}
+.game{
+  border: 1px solid rgb(15, 15, 106);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.board2{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+.info {
+  display: flex;
+  width: fit-content;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 10px;
+  justify-content: center;
 }
 
-.App-link {
-  color: #61dafb;
+.info-column {
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+hr {
+  width: 330px;
+  height: 2px;
+  margin: 20px 0px 20px 0px;
+  border: none;
+  background-color: rgb(210, 210, 210);
+}
+
+#legend {
+  color: rgb(15, 15, 106);
+  font-size: larger;
+}
+
+#legend-2 , #legend-win , #legend-lost{
+  font-size: 40px;
+  color: rgb(15, 15, 106);
+}
+
+.lost , .win{
+  margin: 10px;
+}
+.scoreboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button{
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+  margin-top: 5px;
+  font-size: 20px;
+}
+
+.winnerBanner{
+  font-size: 25px;
+}
+
+.undo{
+  font-size: 15px;
+  color: rgb(15, 15, 106);
+}
+.delete{
+  font-size: 18px;
+  color: red;
+  background-color: white;
+}
+.time{
+  margin: 10px 0px;
 }
